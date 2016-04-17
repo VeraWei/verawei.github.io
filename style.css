@@ -1,3 +1,6 @@
+body {
+  margin: 20px;
+}
 .container {
   text-align: center;
   color: #444333;
@@ -12,4 +15,9 @@ li {
 }
 li:first-child {
   margin-left: 0;
+}
+.footer {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
