@@ -22,6 +22,11 @@ body li:first-child {
 }
 body a {
   text-decoration: none;
+  cursor: pointer;
+}
+body a:hover {
+  color: #ffffff;
+  opacity: 1;
 }
 .nav-bar {
   width: 100%;
@@ -37,6 +42,9 @@ body a {
   right: 0;
   top: 0;
   color: rgba(255, 255, 255, 0.8);
+}
+.nav-bar .contact-us:hover {
+  color: #ffffff;
 }
 .container {
   color: white;
@@ -68,6 +76,9 @@ body a {
 }
 .footer ul {
   margin-bottom: 34px;
+}
+.footer .icon {
+  cursor: pointer;
 }
 .footer .icon img {
   width: 16px;
