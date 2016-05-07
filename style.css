@@ -30,12 +30,21 @@ body a:hover {
 }
 .nav-bar {
   width: 100%;
+  color: rgba(255, 255, 255, 0.8);
 }
 .nav-bar .logo {
-  width: 94px;
+  font-size: 0;
 }
 .nav-bar .logo img {
-  width: 100%;
+  width: 22px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.nav-bar .logo span {
+  margin-left: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
 }
 .nav-bar .contact-us {
   position: absolute;
