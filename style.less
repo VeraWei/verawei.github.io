@@ -1,3 +1,15 @@
+@import "./less/animation.less";
+
+.animation(@name, @time, @fun: linear) {
+  -webkit-animation: @name @time @fun;
+  -moz-animation: @name @time @fun;
+  -o-animation: @name @time @fun;
+  animation: @name @time @fun;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
 html {
   height: 100%;
 }
@@ -58,6 +70,46 @@ body {
 .container {
   color: white;
   margin: 10rem 2rem;
+  position: relative;
+  .page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    &.page-1 {
+      text-align: left;
+    }
+    &.page-2 {
+      text-align: center;
+      h1 {
+        transform: translate(-100%, 0);
+      }
+      p {
+        transform: translate(-100%, 0);
+        text-align: center;
+      }
+    }
+    &.addAnimation1 {
+      .animation(slide-animation, .8s, ease-in-out);
+    }
+    &.addAnimation2 {
+      .copy-1 {
+        .animation(slide-left-animation, 1s, ease-in-out);
+      }
+      .copy-2 {
+        .animation(slide-left-animation, 1s, ease-in-out);
+        animation-delay: .5s;
+      }
+      .copy-3 {
+        .animation(slide-left-animation, 1s, ease-in-out);
+        animation-delay: .8s;
+      }
+      .copy-4 {
+        .animation(slide-left-animation, 1s, ease-in-out);
+        animation-delay: 1.3s;
+      }
+    }
+  }
   h1 {
     font-size: 64px;
     font-weight: lighter;
@@ -67,8 +119,8 @@ body {
   p {
     opacity: 0.8;
     font-size: 20px;
-    max-width: 430px;
     margin: 0;
+    text-align: left;
   }
 }
 .footer {

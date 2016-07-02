@@ -1,3 +1,83 @@
+@-webkit-keyframes slide-animation {
+  from {
+    transform: translate(0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(0, -100%);
+    opacity: 0;
+  }
+}
+@-moz-keyframes slide-animation {
+  from {
+    transform: translate(0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(0, -100%);
+    opacity: 0;
+  }
+}
+@-o-keyframes slide-animation {
+  from {
+    transform: translate(0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(0, -100%);
+    opacity: 0;
+  }
+}
+@keyframes slide-animation {
+  from {
+    transform: translate(0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(0, -100%);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes slide-left-animation {
+  from {
+    transform: translate(-100%, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@-moz-keyframes slide-left-animation {
+  from {
+    transform: translate(-100%, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@-o-keyframes slide-left-animation {
+  from {
+    transform: translate(-100%, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes slide-left-animation {
+  from {
+    transform: translate(-100%, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
 html {
   height: 100%;
 }
@@ -58,6 +138,79 @@ body a:hover {
 .container {
   color: white;
   margin: 10rem 2rem;
+  position: relative;
+}
+.container .page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.container .page.page-1 {
+  text-align: left;
+}
+.container .page.page-2 {
+  text-align: center;
+}
+.container .page.page-2 h1 {
+  transform: translate(-100%, 0);
+}
+.container .page.page-2 p {
+  transform: translate(-100%, 0);
+  text-align: center;
+}
+.container .page.addAnimation1 {
+  -webkit-animation: slide-animation 0.8s ease-in-out;
+  -moz-animation: slide-animation 0.8s ease-in-out;
+  -o-animation: slide-animation 0.8s ease-in-out;
+  animation: slide-animation 0.8s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.container .page.addAnimation2 .copy-1 {
+  -webkit-animation: slide-left-animation 1s ease-in-out;
+  -moz-animation: slide-left-animation 1s ease-in-out;
+  -o-animation: slide-left-animation 1s ease-in-out;
+  animation: slide-left-animation 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.container .page.addAnimation2 .copy-2 {
+  -webkit-animation: slide-left-animation 1s ease-in-out;
+  -moz-animation: slide-left-animation 1s ease-in-out;
+  -o-animation: slide-left-animation 1s ease-in-out;
+  animation: slide-left-animation 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  animation-delay: .5s;
+}
+.container .page.addAnimation2 .copy-3 {
+  -webkit-animation: slide-left-animation 1s ease-in-out;
+  -moz-animation: slide-left-animation 1s ease-in-out;
+  -o-animation: slide-left-animation 1s ease-in-out;
+  animation: slide-left-animation 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  animation-delay: .8s;
+}
+.container .page.addAnimation2 .copy-4 {
+  -webkit-animation: slide-left-animation 1s ease-in-out;
+  -moz-animation: slide-left-animation 1s ease-in-out;
+  -o-animation: slide-left-animation 1s ease-in-out;
+  animation: slide-left-animation 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  animation-delay: 1.3s;
 }
 .container h1 {
   font-size: 64px;
@@ -68,8 +221,8 @@ body a:hover {
 .container p {
   opacity: 0.8;
   font-size: 20px;
-  max-width: 430px;
   margin: 0;
+  text-align: left;
 }
 .footer {
   position: fixed;
