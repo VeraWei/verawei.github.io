@@ -1,0 +1,67 @@
+body {
+  background-color: #EFEFF4;
+}
+.hide {
+  display: none;
+}
+.text-center {
+  text-align: center;
+}
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.weui-footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 0.6em 0;
+}
+.page-1 #form {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 107px;
+}
+.page-1 .form-group {
+  margin-top: 1em;
+}
+.page-1 .form-group p {
+  margin: 0 1em;
+}
+.page-1 .weui-input {
+  flex: 1;
+  padding-left: 0.5em;
+}
+.page-1 .footer-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.page-2 .result-number {
+  font-size: 72px;
+  color: #1aad19;
+  margin: 1em 0.5em;
+}
+.page-2 .content h4 {
+  font-size: 20px;
+  font-weight: normal;
+}
+.page-2 .content p {
+  margin: 1em 2.5em;
+  color: #888888;
+  font-size: 14px;
+}
+.page-2 .weui-footer a {
+  color: #576b95;
+}
+.about-main {
+  padding: 0 1em;
+  margin: 1.5em 1em;
+  color: #5c5c5c;
+}
+.about-main li .file {
+  color: #4990e2;
+}

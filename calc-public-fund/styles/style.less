@@ -1,0 +1,82 @@
+@green: #1AAD19;
+@gray: #888888;
+@gray5C: #5C5C5C;
+@link: #576B95;
+@file: #4990E2;
+body {
+  background-color: #EFEFF4;
+}
+.hide {
+  display: none;
+}
+.text-center {
+  text-align: center;
+}
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.weui-footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 0.6em 0;
+}
+.page-1 {
+  #form {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 107px;
+  }
+  .form-group {
+    margin-top: 1em;
+    p {
+      margin: 0 1em;
+    }
+  }
+  .weui-input {
+    flex: 1;
+    padding-left: 0.5em;
+  }
+  .footer-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+.page-2 {
+  .result-number {
+    font-size: 72px;
+    color: @green;
+    margin: 1em 0.5em;
+  }
+  .content {
+    h4 {
+      font-size: 20px;
+      font-weight: normal;
+    }
+    p {
+      margin: 1em 2.5em;
+      color: @gray;
+      font-size: 14px;
+    }
+  }
+  .weui-footer {
+    a {
+      color: @link;
+    }
+  }
+}
+.about-main {
+  padding: 0 1em;
+  margin: 1.5em 1em;
+  color: @gray5C;
+  li {
+    .file {
+      color: @file;
+    }
+  }
+}

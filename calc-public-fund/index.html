@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="keywords" content="微信,公积金,计算器">
+  <meta name="description" content="weio 计算公积金提取神器">
+  <title>公积金提取计算器</title>
+  <link rel="stylesheet" href="styles/weui.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="page-1 page">
+    <div id="form">
+      <div class="weui-cells_form">
+        <div class="form-group">
+          <p>请输入当前公积金余额</p>
+          <div class="weui-cells">
+            <div class="weui-cell">
+              <label for="surplus">当前余额</label>
+              <input class="weui-input" required type="number" id="surplus" placeholder="输入当前公积金余额"/>
+              <a class="icon weui-icon-info-circle surplus-tip"></a>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <p>请输入每月公积金实际入账金额</p>
+          <div class="weui-cells">
+            <div class="weui-cell">
+              <label for="surplus">每月入账</label>
+              <input class="weui-input" required type="number" id="overall" placeholder="包括个人缴纳+公司缴纳部分"/>
+              <a href="javascript:;" class="icon weui-icon-info-circle overall-tip"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="weui-btn-area footer-btn">
+        <a id="formSubmitBtn" class="weui-btn weui-btn_disabled weui-btn_primary">下一步</a>
+      </div>
+    </div>
+    <div class="weui-footer">
+      <p class="weui-footer__text">根据上海公积金租房提取政策提供计算服务</p>
+    </div>
+  </div>
+  <div class="page-2 page hide text-center">
+    <div class="result-number">
+      <span class="number">1560</span>元
+    </div>
+    <div class="content">
+      <h4>最大提取金额</h4>
+      <p>为了保证因余额不足造成的提取失败，申请提取的金额不应大于最大提取金额</p>
+    </div>
+    <div class="weui-btn-area">
+        <a class="recalc-btn weui-btn weui-btn_primary">重新查询</a>
+        <a href="http://www.shgjj.com/html/bgxz/40300.html" class="weui-btn weui-btn_default">申请表下载</a>
+    </div>
+    <div class="weui-footer">
+      <a href="./about.html">关于公积金提取计算器</a>
+      <p class="weui-footer__text">
+        Made with love, by Weio
+      </p>
+    </div>
+  </div>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="js/weui.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
