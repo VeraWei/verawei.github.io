@@ -13,7 +13,7 @@ var TAU = Zdog.TAU;
 var illo = new Zdog.Illustration({
     element: illoElem,
     // zoom: zoom,
-    dragRotate: true,
+    dragRotate: false,
 
     // onDragStart: function () {
     //     isSpinning = false;
