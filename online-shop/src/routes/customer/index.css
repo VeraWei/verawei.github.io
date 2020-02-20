@@ -1,0 +1,89 @@
+
+.container {
+    padding: 20px;
+    border: 1px solid #e8e8e8;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 20px;
+}
+
+.title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.invoice {
+    padding: 20px;
+}
+
+.invoice-header {
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 20px;
+}
+
+.invoice-header p {
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.client-info {
+    display: flex;
+    padding: 20px 0;
+}
+
+.client-info p {
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.client-info >div {
+    flex: 1;
+}
+
+.bill-address,
+.ship-address {
+    margin-right: 12px;
+}
+
+.cols {
+    display: flex;
+}
+
+.cols span {
+    flex: 1;
+    text-align: right;
+}
+
+.col1 {
+    font-weight: bold;
+}
+
+.header {
+    background-color: grey;
+    text-align: center;
+}
+
+.company-info {
+    flex: 1;
+}
+
+.logo {
+    background-image: url(../../assets/fedEx.png);
+    background-size: 200px 136px;
+    width: 200px;
+    height: 136px;
+}
+
+.ship-info {
+    margin-top: 20px;
+}
+
+.ship-info p span {
+    font-weight: bold;
+}
