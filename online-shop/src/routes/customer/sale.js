@@ -65,6 +65,7 @@ class CustomerSales extends Component {
         return <Table
             dataSource={purchase}
             columns={columns}
+            pagination={false}
         />;
     }
 

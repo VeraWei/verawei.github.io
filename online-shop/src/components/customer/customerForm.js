@@ -40,7 +40,6 @@ class CustomerForm extends React.Component {
                         initialValue: category,
                     })(
                         <Select
-                            prefix={<Icon type="apartment" style={{ color: 'rgba(0,0,0,.25)' }} />}
                             placeholder="Category"
                         >
                             <Option value="Home">Home User</Option>
@@ -55,7 +54,7 @@ class CustomerForm extends React.Component {
                         initialValue: address,
                     })(
                         <Input
-                            prefix={<Icon type="apartment" style={{ color: 'rgba(0,0,0,.25)' }} />}
+                            prefix={<Icon type="home" style={{ color: 'rgba(0,0,0,.25)' }} />}
                             placeholder="Address"
                         />,
                     )}
@@ -66,7 +65,7 @@ class CustomerForm extends React.Component {
                         initialValue: city,
                     })(
                         <Input
-                            prefix={<Icon type="apartment" style={{ color: 'rgba(0,0,0,.25)' }} />}
+                            prefix={<Icon type="environment" style={{ color: 'rgba(0,0,0,.25)' }} />}
                             placeholder="City"
                         />,
                     )}
@@ -77,7 +76,7 @@ class CustomerForm extends React.Component {
                         initialValue: country,
                     })(
                         <Input
-                            prefix={<Icon type="apartment" style={{ color: 'rgba(0,0,0,.25)' }} />}
+                            prefix={<Icon type="environment" style={{ color: 'rgba(0,0,0,.25)' }} />}
                             placeholder="Country"
                         />,
                     )}
@@ -88,7 +87,7 @@ class CustomerForm extends React.Component {
                         initialValue: zipCode,
                     })(
                         <Input
-                            prefix={<Icon type="apartment" style={{ color: 'rgba(0,0,0,.25)' }} />}
+                            prefix={<Icon type="environment" style={{ color: 'rgba(0,0,0,.25)' }} />}
                             placeholder="Zip Code eg: J32 A43"
                         />,
                     )}

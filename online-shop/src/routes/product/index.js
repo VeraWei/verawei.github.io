@@ -17,7 +17,7 @@ class Products extends Component {
 
     renderHead() {
         return <div className={styles.head}>
-            <h1 style={{flex: 1, marginBottom: 0}}>Welcome Comouter Whiz Store!</h1>
+            <h1 style={{flex: 1, marginBottom: 0}}>Welcome Computer Whiz Store!</h1>
             <div style={{marginRight: 8}}><Link to="/home">Home</Link></div>
             <div style={{marginRight: 8}}><Link to="/product">Products</Link></div>
             <Link to="/customer">Customers</Link>
