@@ -19,7 +19,7 @@ const LoginRoute = ({ dispatch, users }) => {
     return (
         <div className={styles['bg']}>
             <div className={styles['header']}>
-                <h1>Welcome Comouter Whiz Store!</h1>
+                <h1>Welcome Computer Whiz Store!</h1>
             </div>
             <Login onLogin={loginIn} users={users} />
         </div>
