@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="bmi.css" />
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Notes 
+
+  BMI Fomula in this site: https://www.cdc.gov/healthyweight/assessing/bmi/childrens_bmi/childrens_bmi_formula.html
+Age is irrelevant 
+
+-->
+
+    <head>
+        <!-- <link rel="stylesheet" href="styles.css"> -->
+        <link src="bmi.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Noto+Sans"
+            rel="stylesheet"
+        />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>BMI checker</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="wrapper">
+                <form action="/" method="POST">
+                    <h1>BMI calculator</h1>
+                    <p>Insert Your Age</p>
+                    <input type="text" name="age" id="age" />
+                    <p>Insert Weight in Kg</p>
+                    <input type="text" name="weight" id="weight" />
+                    <br />
+                    <p>Insert Height in cm</p>
+                    <input type="text" name="height" id="height" />
+                    <br />
+                    <button type="submit" id="calc">check</button>
+                    <p id="result"></p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
