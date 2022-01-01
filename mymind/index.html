@@ -6,14 +6,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=We, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="../site/style.css">
+  <!-- <link rel="stylesheet" href="../site/style.css"> -->
   <style>
     body {
       color: #f0f0f0;
+      margin: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    body a {
+      color: #f0f0f0;
+      text-decoration: none;
+      font-weight: 700;
+      letter-spacing: 2px;
+      padding: 0 5px;
+      text-transform: uppercase;
+      font-size: 80%;
     }
 
     header {
       background: #323232;
+      line-height: 30px;
     }
 
     header h1 {
@@ -21,13 +37,51 @@
       padding: 20px;
     }
 
+    header h1 a {
+      float: right;
+    }
+
+    .bl-main {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .bl-main>section {
+      position: absolute;
+      width: 100%;
+      height: 21%;
+    }
+
+    .bl-main>section:first-child {
+      top: 0;
+      background: #10A296;
+    }
+
+    .bl-main>section:nth-child(2) {
+      top: 25%;
+      background: #72CCA7;
+    }
+
+    .bl-main>section:nth-child(3) {
+      top: 50%;
+      background: #FA987D;
+    }
+
+    .bl-main>section:nth-child(4) {
+      top: 75%;
+      background: #F06060;
+    }
+
     section {
+      width: 25%;
       font-size: 20px;
       padding: 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+
     }
 
     section h2 {
@@ -46,47 +100,46 @@
 
 <body>
   <header>
-    <h1>Welcome to my mind!</h1>
+    <h1>Welcome to my mind! <a href="/">回到主页</a></h1>
+
+   
   </header>
-  <div class="container">
-    <div class="bl-main">
-      <section>
-        <h2>读书</h2>
-        <ul>
-          <li><a href="book/annotation/list/0.html">笔记</a></li>
-          <li><a href="book/collect/list/0.html">读过</a></li>
-          <li><a href="book/do/list/0.html">在读</a></li>
-          <li><a href="book/wish/list/0.html">想读</a></li>
-        </ul>
-      </section>
-      <section>
+  <div class="bl-main">
+    <section>
+      <h2>读书</h2>
+      <ul>
+        <li><a href="book/annotation/list/0.html">笔记</a></li>
+        <li><a href="book/collect/list/0.html">读过</a></li>
+        <li><a href="book/do/list/0.html">在读</a></li>
+        <li><a href="book/wish/list/0.html">想读</a></li>
+      </ul>
+    </section>
+    <section>
 
-        <h2>电影</h2>
-        <ul>
-          <li><a href="movie/collect/list/0.html">看过</a></li>
-          <li><a href="movie/do/list/0.html">在看</a></li>
-          <li><a href="movie/wish/list/0.html">想看</a></li>
-        </ul>
-      </section>
-      <section>
-        <h2>音乐</h2>
-        <ul>
-          <li><a href="music/collect/list/0.html">听过</a></li>
-          <li><a href="music/do/list/0.html">在听</a></li>
-          <li><a href="music/wish/list/0.html">想听</a></li>
-        </ul>
-      </section>
-      <section>
-        <h2>评论</h2>
-        <ul>
-          <li><a href="reviews/list/0.html">我的评论</a></li>
-      </section>
+      <h2>电影</h2>
+      <ul>
+        <li><a href="movie/collect/list/0.html">看过</a></li>
+        <li><a href="movie/do/list/0.html">在看</a></li>
+        <li><a href="movie/wish/list/0.html">想看</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>音乐</h2>
+      <ul>
+        <li><a href="music/collect/list/0.html">听过</a></li>
+        <li><a href="music/do/list/0.html">在听</a></li>
+        <li><a href="music/wish/list/0.html">想听</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>评论</h2>
+      <ul>
+        <li><a href="reviews/list/0.html">我的评论</a></li>
+    </section>
 
-      <pre>
+    <pre>
         什么时候能把它打扮的好看点
       </pre>
-    </div>
-
   </div>
 
 </body>
