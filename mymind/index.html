@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=We, initial-scale=1.0">
-  <title>Document</title>
+  <title>Read my Mind</title>
   <!-- <link rel="stylesheet" href="../site/style.css"> -->
   <style>
     body {
@@ -30,15 +30,18 @@
     header {
       background: #323232;
       line-height: 30px;
+      width: 100%;
     }
 
     header h1 {
       margin: 0;
       padding: 20px;
+      display: flex;
     }
 
     header h1 a {
-      float: right;
+      flex: 1;
+      text-align: right;
     }
 
     .bl-main {
@@ -50,7 +53,7 @@
     .bl-main>section {
       position: absolute;
       width: 100%;
-      height: 21%;
+      height: 24%;
     }
 
     .bl-main>section:first-child {
@@ -59,24 +62,23 @@
     }
 
     .bl-main>section:nth-child(2) {
-      top: 24%;
+      top: 23%;
       background: #72CCA7;
     }
 
     .bl-main>section:nth-child(3) {
-      top: 48%;
+      top: 46%;
       background: #FA987D;
     }
 
     .bl-main>section:nth-child(4) {
-      top: 72%;
+      top: 69%;
       background: #F06060;
     }
 
     section {
       width: 25%;
       font-size: 20px;
-      padding: 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -100,9 +102,7 @@
 
 <body>
   <header>
-    <h1>Welcome to my mind! <a href="/">回到主页</a></h1>
-
-   
+    <h1><span>Welcome to my mind! </span><a href="/">主页</a></h1>
   </header>
   <div class="bl-main">
     <section>
@@ -132,15 +132,10 @@
       </ul>
     </section>
     <section>
-      <h2>评论 & 日记</h2>
+      <h2>评论</h2>
       <ul>
         <li><a href="reviews/list/0.html">我的评论</a></li>
-        <li><a href="notes/list/0.html">日记随笔</a></li>
     </section>
-
-    <pre>
-        什么时候能把它打扮的好看点
-      </pre>
   </div>
 
 </body>
