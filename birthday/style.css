@@ -188,14 +188,16 @@
                   border-radius: 0;
                   border-radius: 80% 80% 80% 80%;
                   margin: 0 auto;
-                  position: absolute;
+                  /* position: absolute; */
                   padding: 10px;
                   box-shadow: inset 17px 7px 10px rgba(182, 15, 97, 0.9);
                   -webkit-transform-origin: bottom center;
+                  display: inline-block;
+                  margin-right: 10px;
               }
               .balloon > div:nth-child(1) {
                   background: rgba(182, 15, 97, 0.9);
-                  left: 0;
+                  /* left: 0; */
                   box-shadow: inset 10px 10px 10px rgba(135, 11, 72, 0.9);
                   -webkit-animation: balloon1 6s ease-in-out infinite;
                   -moz-animation: balloon1 6s ease-in-out infinite;
@@ -207,7 +209,7 @@
               }
               .balloon > div:nth-child(2) {
                   background: rgba(242, 112, 45, 0.9);
-                  left: 120px;
+                  /* left: 120px; */
                   box-shadow: inset 10px 10px 10px rgba(222, 85, 14, 0.9);
                   -webkit-animation: balloon2 6s ease-in-out infinite;
                   -moz-animation: balloon2 6s ease-in-out infinite;
@@ -219,7 +221,7 @@
               }
               .balloon > div:nth-child(3) {
                   background: rgba(45, 181, 167, 0.9);
-                  left: 240px;
+                  /* left: 240px; */
                   box-shadow: inset 10px 10px 10px rgba(35, 140, 129, 0.9);
                   -webkit-animation: balloon4 6s ease-in-out infinite;
                   -moz-animation: balloon4 6s ease-in-out infinite;
@@ -315,10 +317,10 @@
               }
               .balloon > div:before {
                   color: rgba(182, 15, 97, 0.9);
-                  position: absolute;
+                  /* position: absolute; */
                   bottom: -11px;
                   left: 52px;
-                  content:"▲";
+                  /* content:"▲"; */
                   font-size: 1em;
               }
               span {
