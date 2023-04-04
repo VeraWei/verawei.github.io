@@ -1,6 +1,6 @@
 window.addEventListener("load", (event) => {
   $(".page").click(function () {
-    if ($(this).is(':last-child')) return false;
+    if ($(this).is(":last-child")) return false;
     $(this).removeClass("no-anim").toggleClass("flipped");
     reorder();
   });
@@ -17,4 +17,8 @@ window.addEventListener("load", (event) => {
     });
   }
   reorder();
+
+  $("#doc-link").click(function() {
+    window.open("https://docs.google.com/document/d/1T_iJbUmYm-h1-O9WxyaAlDdOgeMPc4pfbMj2lVYu8Go/edit?usp=sharing");
+  })
 });
