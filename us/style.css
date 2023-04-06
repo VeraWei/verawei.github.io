@@ -1,7 +1,10 @@
 .headline {
   text-align: center;
   margin: 0 auto;
-  padding: 20px; }
+  padding: 20px;
+  color: #ef2525;
+  font-size: 100px;
+  font-style: italic; }
 
 .player {
   position: fixed;
@@ -43,7 +46,8 @@ body * {
   /* am i doing this wrong? */ }
 
 body {
-  background: radial-gradient(rgba(219, 233, 240, 0.7), rgba(255, 255, 255, 0)) no-repeat, linear-gradient(60deg, pink, lightblue, green);
+  background-image: url("./images/together1.JPG");
+  background-size: 360px 270px;
   color: #222;
   font-family: "Gabriela", serif;
   perspective: 70em;
@@ -53,11 +57,14 @@ body {
 h2 {
   margin: 5% 0; }
 
+p {
+  font-size: 18px; }
+
 .book {
   height: 80%;
-  max-height: 500px;
+  max-height: 550px;
   min-height: 300px;
-  width: 800px;
+  width: 960px;
   background-image: linear-gradient(90deg, rgba(179, 128, 77, 0.6), rgba(71, 51, 31, 0.9), rgba(179, 128, 77, 0.4) 90%), url("http://inspirationhut3.inspirationhut.netdna-cdn.com/wp-content/uploads/2012/11/Old-Paper-Texture-3.jpg");
   position: absolute;
   top: 0;
@@ -73,13 +80,16 @@ h2 {
   height: 100%;
   width: 50%;
   line-height: 1.5;
-  border-right: 10px solid transparent;
+  border-left: 1px solid;
   position: absolute;
   top: 0;
   right: 0;
   transform-origin: 0 50%;
   transition: 0.8s;
+  cursor: pointer;
   /*animation: unflip .3s linear;*/ }
+  .page:last-child {
+    cursor: default; }
 
 [class*="side"] {
   height: 100%;

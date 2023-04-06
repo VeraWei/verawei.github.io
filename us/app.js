@@ -1,6 +1,5 @@
 window.addEventListener("load", (event) => {
   $(".page").click(function () {
-    if ($(this).is(":last-child")) return false;
     $(this).removeClass("no-anim").toggleClass("flipped");
     reorder();
   });
