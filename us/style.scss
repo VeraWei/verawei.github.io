@@ -7,11 +7,12 @@
   font-style: italic;
 }
 
-.player {
-  position: fixed;
-  left: 10px;
-  right: 10px;
+.player {position: fixed;
+  left: 0;
+  right: 0;
   bottom: 10px;
+  margin: auto;
+  width: 80%;
 }
 *,
 *:before,
@@ -51,11 +52,10 @@ body * {
 }
 
 body {
-  // background: radial-gradient(hsla(199, 40%, 90%, 0.7), hsla(0, 0%, 100%, 0))
-  //     no-repeat,
-  //   linear-gradient(60deg, pink, lightblue,green);
-  background-image: url("./images/together1.JPG");
-  background-size: 360px 270px;
+  background: radial-gradient(hsla(199, 40%, 90%, 0.7), hsla(0, 0%, 100%, 0))
+      no-repeat,
+    linear-gradient(60deg, pink, lightblue,green) no-repeat;
+  background-size: 100% 100%;
   color: #222;
   font-family: "Gabriela", serif;
   perspective: 70em; /*in your face*/
@@ -75,13 +75,8 @@ p {
   max-height: 550px;
   min-height: 300px;
   width: 960px;
-  background-image: linear-gradient(
-      90deg,
-      hsla(30, 40%, 50%, 0.6),
-      hsla(30, 40%, 20%, 0.9),
-      hsla(30, 40%, 50%, 0.4) 90%
-    ),
-    url("http://inspirationhut3.inspirationhut.netdna-cdn.com/wp-content/uploads/2012/11/Old-Paper-Texture-3.jpg");
+  background-color: #ece8e4;
+  background-image: url("http://inspirationhut3.inspirationhut.netdna-cdn.com/wp-content/uploads/2012/11/Old-Paper-Texture-3.jpg");
   position: absolute;
   top: 0;
   left: 0;
@@ -91,7 +86,6 @@ p {
 
   border: 3px solid hsla(30, 10%, 20%, 1);
   border-radius: 5px;
-  box-shadow: 0 0 150px hsla(170, 0%, 0%, 0.4);
 }
 
 .page {
@@ -114,7 +108,7 @@ p {
   height: 100%;
   width: 100%;
   position: absolute;
-  background-color: hsl(30, 40%, 70%);
+  background-color: #ece8e4;
   background-image: url("http://inspirationhut3.inspirationhut.netdna-cdn.com/wp-content/uploads/2012/11/Old-Paper-Texture-3.jpg");
   background-size: 100% 100%;
   backface-visibility: hidden;
