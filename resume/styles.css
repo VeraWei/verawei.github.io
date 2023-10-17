@@ -255,6 +255,9 @@ Padding & Margins CSS
 .mr-10 {
     margin-right: 10px;
 }
+.mt-50 {
+    margin-top: 50px;
+}
 .mb-8 {
     margin-bottom: 8px;
 }
@@ -512,4 +515,32 @@ Page Styles
 
 .pro-details {
     font-weight: bold;
+}
+
+/*
+Mobile Style
+*/
+
+@media only screen and (max-width: 800px) {
+    .container {
+        display: block;
+        overflow: auto;
+    }
+
+    .left-content {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .logo a {
+        text-align: center;
+    }
+
+    .nav {
+        display: none;
+    }
 }
