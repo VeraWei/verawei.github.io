@@ -1,208 +1,307 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="site/style.css">
-  <link rel="icon" type="image/png" sizes="16x16" href="site/favicon-96x96.png">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
-  <title>WEIO</title>
-  <style>
-    body {
-      color: #f0f0f0;
-    }
-  </style>
-</head>
-
-<body>
-  <a
-    class="github-fork-ribbon right-bottom fixed"
-    href="https://github.com/VeraWei"
-    data-ribbon="Fork me on GitHub"
-    title="Fork me on GitHub"
-    target="_blank"
-  >
-    Fork me on GitHub
-  </a>
-  <div class="container">
-    <div class="conta">
-      <div class="bl-main" id="bl-main">
-        <section>
-          <div class="bl-box">
-            <h2>ABOUT</h2>
-          </div>
-
-          <div class="bl-content">
-            <h2>About me</h2>
-
-            <ul>
-              <li>Sometimes positive. Can do a lot of things in a short time and will do them very well</li>
-              <li>Sometimes I bury myself in negative feelings, thinking everything is pointless</li>
-              <li>Don’t like rainy days</li>
-              <li>Love “One Piece”</li>
-              <li>Always setting “Get abs” as my New Year’s goal</li>
-              <li>...</li>
-            </ul>
-          </div><span class="bl-icon bl-icon-close">Close</span>
-        </section>
-
-        <section>
-          <div class="bl-box">
-            <h2>Contact</h2>
-          </div>
-
-          <div class="bl-content">
-            <h2>You can find me here</h2>
-            <ul>
-              <li>
-                <a href="mailto:vera.wqm@gmail.com">email me</a>
-              </li>
-              <li>
-                <a href="https://medium.com/@vera.wqm">medium @vera.wqm</a>
-              </li>
-            </ul> 
-          </div><span class="bl-icon bl-icon-close">Close</span>
-        </section>
-
-        <section id="bl-work-section">
-          <div class="bl-box">
-            <h2>Works</h2>
-          </div>
-
-          <div class="bl-content">
-            <h2>My Works</h2>
-
-            <p>
-              Fine, I admit I am a software developer. Everytime when I look back what I did, I feel I did nothing. 🙃
-            </p>
-
-            <ul>
-              <li>
-                Wrote some code for a few websites.
-              </li>
-
-              <li>
-                Wrote some help-document for how to solve some specific problems.
-              </li>
-
-              <li>
-                Wrote some thoughts about the books/movie I read/watched.
-              </li>
-
-              <li>
-                <span>The recent side-project I did is fetching all data from douban.</span>
-                <a href="https://github.com/VeraWei/douban-data-storage">Check it here</a>
-              </li>
-            </ul>
-          </div><span class="bl-icon bl-icon-close">Close</span>
-        </section>
-
-        <section>
-          <div class="bl-box">
-            <h2>Blog</h2>
-          </div>
-
-          <div class="bl-content">
-            <ul>
-              <li>
-                <a href="https://medium.com/@vera.wqm">Technical Blog.</a>
-              </li>
-
-              <li>
-                <a href="mymind">Some Records I marked (Douban)</a>
-              </li>
-
-              <li>
-                <a href="https://www.goodreads.com/review/list/88881968?ref=nav_mybooks">Books List</a>
-              </li>
-            </ul>
-          </div><span class="bl-icon bl-icon-close">Close</span>
-        </section><!-- Panel items for the works -->
-<!-- 
-        <div class="bl-panel-items" id="bl-panel-work-items">
-          <div data-panel="panel-1">
-            <div>
-              <img src="images/1.jpg">
-
-              <h3>Fixie bespoke</h3>
-
-              <p>Iphone artisan direct trade ethical Austin. Fixie
-                bespoke banh mi ugh, deep v vinyl hashtag. Tumblr
-                gentrify keffiyeh pop-up iphone twee biodiesel. Occupy
-                american apparel freegan cliche. Mustache trust fund
-                8-bit jean shorts mumblecore thundercats. Pour-over
-                small batch forage cray, banjo post-ironic flannel
-                keffiyeh cred ethnic semiotics next level tousled
-                fashion axe. Sustainable cardigan keytar fap bushwick
-                bespoke.</p>
+    <html>
+    <head>
+        <title>My Resume</title>
+        <link rel="stylesheet" type="text/css" href="resume/styles.css" />
+        <link
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+        />
+        <link rel="icon" type="image/png" href="./resume/resume-favicon.png" />
+    </head>
+    <body>
+        <div class="wraper">
+            <div class="container">
+                <div class="left-content p-30">
+                    <div class="logo">
+                        <a href="index.html">
+                        <span>My</span>
+                        <span>Resume</span>
+                        </a>
+                    </div>
+                    <div class="nav">
+                        <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#work">Work Profile</a></li>
+                        </ul>
+                    </div>
+                    <div class="stacks flex-1">
+                        <div class="frontend mb-8">
+                            <b>Front End:</b> React (6+
+                            years), Redux, TypeScript,
+                            Jest, Backbone, ES5/6/7,
+                            Less/Sass/CSS Modules/
+                            PostCSS, Storybook
+                        </div>
+                        <div class="backend mb-8">
+                            <b>Server & Back End:</b>
+                            NodeJs, NestJs, RESTful
+                            API, GraphQL, K8s,
+                            Docker, Kafka, Vercel
+                        </div>
+                        <div class="cloud mb-8">
+                            <b>Cloud & Database:</b> MS
+                            Azure, Alibaba Cloud,
+                            GCP, Firebase, MySQL,
+                            MongoDB
+                        </div>
+                        <div class="tools">
+                            <b>Tools:</b> Git, Webpack,
+                            Gulp, NPM, Yarn, CI/CD,
+                            Mixpanel, Segment,
+                            Pendo, Contentful,
+                            LaunchDarkly
+                        </div>
+                    </div>
+                    <div class="left-footer">
+                        <button class="download">
+                            <i class="fa fa-download"></i> 
+                            <a href="./resume/" download="Vera.Wei_Software Engineer.pdf" target="_blank">Download</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="main-content">
+                    <div class="section1 p-30" id="about">
+                        <div class="pg-title mb-20">My Profile</div>
+                        <div class="d-flex-align-center">
+                        <div class="user-img flex-1"><img src="./resume/IMG_2050.jpeg" /></div>
+                        <div class="user-profile flex-1">
+                            <div class="pro-details">
+                            <div class="sm-text">HELLO EVERYBODY, I AM</div>
+                            <div class="name">Qiuming WEI</div>
+                            <div class="role">Senior Software Engineer</div>
+                            </div>
+                            <div class="text">
+                                An enthusiastic software engineer with a decade of
+                                professional experience including several years focused in
+                                full stack. Possessing comprehensive skills in all aspects of
+                                development with expertise spanning multiple industries,
+                                including marketing and advertising, enterprise collaboration,
+                                Internet of Things, and automation testing. Well-versed in
+                                Agile engineering practices, utilizing them to foster
+                                efficient and collaborative development processes.
+                            </div>
+                            <div class="pr-list">
+                                <ul>
+                                    <li class="mb-8">
+                                        <i class="fa fa-phone" aria-hidden="true"></i> +1
+                                        7788668046
+                                    </li>
+                                    <li class="mb-8">
+                                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                                        <a href="mailto:email@example.com">vera.wqm@gmail.com</a>
+                                    </li>
+                                    <li class="mb-8">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        Vancouver BC, Canada
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="social-icons-head">
+                            <ul>
+                                <li>
+                                <a
+                                    target="_blank"
+                                    href="https://www.linkedin.com/in/qiumingwei"
+                                    ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+                                ></a>
+                                </li>
+                                <li>
+                                <a target="_blank" href="https://github.com/VeraWei"
+                                    ><i class="fa fa-github" aria-hidden="true"></i
+                                ></a>
+                                </li>
+                                <li>
+                                <a target="_blank" href="https://medium.com/@vera.wqm"
+                                    ><i class="fa fa-medium" aria-hidden="true"></i
+                                ></a>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="section1 p-30" id="education">
+                        <div class="pg-title mb-20">My Education</div>
+                        <div class="d-flex-align-center">
+                            <div class="pr-list">
+                                <ul>
+                                    <li class="mb-20">
+                                        <div class="pro-details d-flex-align-center">
+                                            <div class="sm-text mr-10">Post Degree Diploma, Douglas College, Vancouver, BC, Canada</div>
+                                            <div class="time">2019 - 2020</div>
+                                        </div>
+                                        <div class="text">Information Communication & Technology</div>
+                                    </li>
+                                    <li>
+                                        <div class="pro-details d-flex-align-center">
+                                            <div class="sm-text mr-10">Bachelor of Science, Nanjing Tech University, Nanjing, China</div>
+                                            <div class="time">2009 - 2013</div>
+                                        </div>
+                                        <div class="text">Computer Science</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section1 p-30" id="work">
+                        <div class="pg-title mb-20">My Work</div>
+                        <div class="d-flex-align-center">
+                            <div class="pr-list">
+                                <ul>
+                                    <li class="mb-50">
+                                        <div class="d-flex-align-center flex-1 mb-20">
+                                            <div class="favicon mr-10">
+                                                <img src="./resume/saucelabs-favicon.png" alt="sauce labs">
+                                            </div>
+                                            <div>
+                                                <div class="pro-details d-flex-align-center mb-8">
+                                                    <div class="sm-text mr-10">Senior Full Stack Engineer @Sauce Labs Inc</div>
+                                                    <div class="time">2021.01 - 2023.05</div>
+                                                </div>
+                                                <div>Growth team member for a continuously testing company, collaborating across teams to deliver
+                                                    new experimental features using Agile development practices.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="text">
+                                            <li class="p-left50 mb-20">
+                                                <div class="project mb-8">Sauce Labs (web app + signup)</div>
+                                                <ol>
+                                                    <li>Employed NextJS to construct a user-friendly sign-up process for new users, resulting in improved product activation and accelerated value realization</li>
+                                                    <li>Coordinated user identification and tracking using Segment across products and documentation websites, leveraging Mixpanel and Pendo for usage analytics to inform future decision-making</li>
+                                                    <li>Created REST APIs and services using NodeJS and Kafka for Growth microservice, facilitating user registration and analysis of user traits and actions to enhance the quality of sales leads</li>
+                                                    <li>Spearheaded the implementation of feature flags for A/B experiments and rapid prototyping, leading to measured successes and widespread adoption throughout the organization</li>
+                                                    <li>Optimized the CI/CD pipeline to reduce running time to 60%</li>
+                                                    <li>Created a plugin Platform configurator component for reuse in different locations</li>
+                                                    <li>Supported the testing script generator with different languages (Python, JavaScript, Ruby, C#, etc.)</li>
+                                                </ol>
+                                            </li>
+                                            <li class="p-left50">
+                                                <div class="project mb-8">Sauce Labs Website</div>
+                                                <ol>
+                                                    <li>Wrote a node script to migrate 1000+ articles from the original site</li>
+                                                    <li>Collaborated closely with the marketing team to develop the corporate website using React and Contentful (CMS), resulting in improved user sign-up quality</li>
+                                                    <li>Utilized Vercel practices for deployment and monitoring</li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="mb-50">
+                                        <div class="d-flex-align-center flex-1 mb-20">
+                                            <div class="favicon mr-10">
+                                                <img src="./resume/alibaba-favicon.png" alt="Alibaba Cloud">
+                                            </div>
+                                            <div>
+                                                <div class="pro-details d-flex-align-center mb-8">
+                                                    <div class="sm-text mr-10">Senior Software Engineer @Alibaba Cloud</div>
+                                                    <div class="time">2017.08 - 2019.09</div>
+                                                </div>
+                                                <div>Served in a prominent global company, contributing as a client-facing engineer. Provided
+                                                    mentorship, assisting junior engineers in skill development, tool utilization, and best practices
+                                                    and successfully guiding at least 5 developers towards promotion through effective coaching.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="text">
+                                            <li class="p-left50 mb-20">
+                                                <div class="project mb-8">IoT Studio</div>
+                                                <ol>
+                                                    <li>Led engineering teams and implemented 20+ graph/diagram/Text etc. virtualized components with a dynamic data stream, connecting the client-side with base-level cloud services</li>
+                                                    <li>Designed and implemented a long-channel solution based on the MQTT protocol to solve real-time communication problems between IoT devices. Handled different edge cases, such as building reconnection or destroying mechanisms</li>
+                                                    <li>Outlined specifications and actively on call to respond to user feedback* ICA Data Platform</li>
+                                                </ol>
+                                            </li>
+                                            <li class="p-left50 mb-20">
+                                                <div class="project mb-8">ICA Data Platform</div>
+                                                <ol>
+                                                    <li>Organized technical system design meetings to complete the whole chain in every development lifecycle</li>
+                                                    <li>Led teams to develop and provide capabilities for creating things templates, attributes, services, events, and source modules for partners. Connected specific customers (developers) with Alibaba Cloud's fundamental technical capabilities like virtual devices, service modeling, etc. in order to help them to sell their solutions</li>
+                                                </ol>
+                                            </li>
+                                            <li class="p-left50 mb-20">
+                                                <div class="project mb-8">Consoles</div>
+                                                <ol>
+                                                    <li>Managed teams and implemented several consoles from scratch to release to the production environment</li>
+                                                    <li>Took responsibility for the growth of junior engineers as well as product quality</li>
+                                                    <li>Led redesign of a solution and developed an npm plugin to efficiently extract and replace characters from antiquated projects for Localization/Globalization purposes. Reduced workload from 10 people per day to 1 person per day and achieved concrete goals on a strict deadline</li>
+                                                    </ol>
+                                                </ol>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="mb-50">
+                                        <div class="d-flex-align-center flex-1 mb-20">
+                                            <div class="favicon mr-10">
+                                                <img src="./resume/teambition-favicon.ico" alt="Alibaba Cloud">
+                                            </div>
+                                            <div>
+                                                <div class="pro-details d-flex-align-center mb-8">
+                                                    <div class="sm-text mr-10">Senior Front End Developer @Teambition</div>
+                                                    <div class="time">2016.09 - 2017.07</div>
+                                                </div>
+                                                <div>Recruited to top enterprise collaboration platform to build single-page web application.
+                                                    Began mastering React and related skills from this point forward.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="text">
+                                            <li class="p-left50 mb-20">
+                                                <div class="project mb-8">Teambition</div>
+                                                <ol>
+                                                    <li>Implemented Gantt chart view in the project panel. Enhanced users to create tasks in virtual drag-drops. Applied accurate calculations of users' view size to streamline pagination loading</li>
+                                                    <li>Integrated Chinese social platforms for use as users' third-party accounts.</li>
+                                                    <li>Implemented sequence diagrams and designed various user cases to overcome differences between two account structures and API requirements</li>
+                                                    <li>Leveraged sophisticated experience with data caching system design, such as cookie, local/session storage, etc.</li>
+                                                    <li>Improved overall performance by 70% (decreasing first-page loading time from 5.2s to 4s) by replacing image assets with sprite, applying lazy loading, and using SSR (Server-side Rendering) for some static pages.</li>
+                                                </ol>
+                                            <li class="p-left50 mb-20">
+                                                <div class="project mb-8">Annual User Review</div>
+                                                <ol>
+                                                    <li>Replaced most react components with pure and functional components</li>
+                                                    <li>Started from conceptualization and designed an implementation solution that translated a smooth animation design into a dynamic mobile-first animation with GreenSockJs in 3 days for yearly reuse</li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="d-flex-align-center flex-1 mb-20">
+                                            <div class="favicon mr-10">
+                                                <img src="./resume/fancypants-favicon.ico" alt="Fancy pants">
+                                            </div>
+                                            <div>
+                                                <div class="pro-details d-flex-align-center mb-8">
+                                                    <div class="sm-text mr-10">Web Developer @Fancy Pants Group</div>
+                                                    <div class="time">2013.03 - 2015.06</div>
+                                                </div>
+                                                <div>Specialized in creating detail-orientated webpages for marketing and advertising. Extensive
+                                                    training in advanced HTML/CSS/Javascript skills as a web developer.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <ul>
+                                                <li class="p-left50 mb-20">
+                                                    <div class="project mb-8">Online dynamic HTM5 animations</div>
+                                                    <ol>
+                                                        <li>Created responsive and adaptive webpages across different devices, adjusting for diverging viewport sizes, resolutions, usage contexts, and control mechanisms</li>
+                                                        <li>Delivered more than 50 projects with strong UI/UX skills</li>
+                                                        <li>Worked with most animation solutions (CSS3 animation, Canvas, WebGL, SVG)</li>
+                                                        <li>Utilized several popular animation libraries, e.g. GreenSock, ThreeJs, D3, etc.</li>
+                                                        <li>Designed several downgrade solutions for older browsers (IE8, Android 2.x, etc.)</li>
+                                                    </ol>
+                                                </li>
+                                            </ul>
+                                                
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <div data-panel="panel-2">
-            <div>
-              <img src="images/2.jpg">
-
-              <h3>Chillwave mustache</h3>
-
-              <p>Squid vinyl scenester literally pug, hashtag tofu
-                try-hard typewriter polaroid craft beer mlkshk cardigan
-                photo booth PBR. Chillwave 90's gentrify american
-                apparel carles disrupt. Pinterest semiotics
-                single-origin coffee craft beer thundercats irony,
-                tumblr bushwick intelligentsia pickled. Narwhal
-                mustache godard master cleanse street art, occupy ugh
-                selfies put a bird on it cray salvia four loko
-                gluten-free shoreditch.</p>
-            </div>
-          </div>
-
-          <div data-panel="panel-3">
-            <div>
-              <img src="images/3.jpg">
-
-              <h3>Austin hella</h3>
-
-              <p>Ethical cray wayfarers leggings vice, seitan banksy
-                small batch ethnic master cleanse. Pug chillwave etsy,
-                scenester meh occupy blue bottle tousled blog tonx
-                pinterest selvage mixtape swag cosby sweater. Synth
-                tousled direct trade, hella Austin craft beer ugh
-                chambray.</p>
-            </div>
-          </div>
-
-          <div data-panel="panel-4">
-            <div>
-              <img src="images/4.jpg">
-
-              <h3>Brooklyn dreamcatcher</h3>
-
-              <p>Fashion axe 90's pug fap. Blog wayfarers brooklyn
-                dreamcatcher, bicycle rights retro YOLO. Wes anderson
-                lomo 90's food truck 3 wolf moon, twee jean shorts.
-                Iphone small batch twee wolf yr before they sold out.
-                Brooklyn echo park cred, portland pug selvage flannel
-                seitan tousled mcsweeney's.</p>
-            </div>
-          </div>
-
-          <nav>
-            <span class="bl-next-work">&gt; Next Project</span>
-            <span class="bl-icon bl-icon-close"></span>
-          </nav>
-        </div> -->
-      </div>
-    </div>
-  </div><!-- /container -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="js/boxlayout.js"></script>
-  <script>
-    $(function () {
-      Boxlayout.init();
-    });
-  </script>
-  <script src="site/js/layout.js"></script>
-</body>
-
+        </div>
+    </body>
 </html>
