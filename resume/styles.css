@@ -543,7 +543,7 @@ Mobile Style
     }
 
     .mobile-user {
-        display: block;
+        display: none;
     }
 
     .logo a,
