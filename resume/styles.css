@@ -331,6 +331,11 @@ Page Styles
     justify-content: flex-end;
 }
 
+.mobile-user {
+    display: none;
+    width: 128px;
+}
+
 .logo a {
     color: #fff;
     text-align: right;
@@ -537,11 +542,13 @@ Mobile Style
         justify-content: center;
     }
 
-    .logo a {
-        text-align: center;
+    .mobile-user {
+        display: block;
     }
 
-    .nav {
+    .logo a,
+    .nav,
+    .user-img {
         display: none;
     }
 }
